@@ -1,6 +1,6 @@
 language: java
-jdk:
-- oraclejdk8
+
 env:
-  - MYVAR="ONE"
-  - MYVAR2="BAZZZ"
+- DB=postgres
+- SH=bash
+- PACKAGE_VERSION="1.0.*"
