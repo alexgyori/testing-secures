@@ -15,8 +15,12 @@ public class AppTest
     public void testApp()
     {
 
+	String cond = System.getenv("MYVAR");
 	String value = System.getenv("MYVARIABLE");
-	
-        assertEquals("2w2344", value);
+	if (cond.equals("ONE")) {
+	    assertEquals(null, value);
+	} else {
+	    assertEquals("2w2344", value);
+	}
     }
 }
